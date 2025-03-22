@@ -9,3 +9,10 @@ export type Position = {
   x: number;
   y: number;
 };
+
+export type PositionWithDirection = {
+  id: string;
+  x: number;
+  y: number;
+  direction: 'N' | 'E' | 'W' | 'S'; // | 'R';
+};

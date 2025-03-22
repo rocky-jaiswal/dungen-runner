@@ -39,7 +39,7 @@ export class Player {
       nextX <= this.gameState.width &&
       nextY >= 0 &&
       nextY <= this.gameState.height &&
-      !this.gameState.checkWallCollision(nextX, nextY)
+      !this.gameState.checkWallCollision(nextX, nextY, this.gameState.playerSize)
     ) {
       this.playerGraphics.x = nextX;
       this.playerGraphics.y = nextY;
